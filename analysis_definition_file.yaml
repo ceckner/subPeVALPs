@@ -1,0 +1,87 @@
+#YAML
+GMF_conversion: 
+  model: "jansson12c"
+  m_a: [1.0] #units: neV
+  g_agg: [1.0, 2.0] #units: 1e-11 GeV^-1
+  path: './' #output path of photon-ALP conversion probability maps in Milky Way
+SBG_ALP_conversion:
+  m_a: [1.0] #units: neV
+  g_agg: [1.0, 2.0] #units: 1e-11 GeV^-1
+  B0: 5.0 ## units: muG
+  sigmaB: 3.0 ## units: muG
+  ne0: 0.05
+  Ldom: 1.0 ##unit: kpc
+  R_prop: 10.0 ##unit: kpc
+  path: './' #output path of averaged photon-ALP conversion probability values per redshift in star-forming galaxies
+Subthreshold_flux:
+   HAWC:
+     GLON: [43.0, 73.0]
+     GLAT: [-4.0, 4.0]
+     beta: 2.6
+     E_c: 300.0 ##TeV
+     S_det: 0.02 ## In units of Crab flux from 10 TeV to 100 TeV
+   TibetASg:
+     GLON: [25.0, 100.0]
+     GLAT: [-5.0, 5.0]
+     beta: 2.6
+     E_c: 300.0 ##TeV
+     S_det: 0.09739141919624462 ## In units of Crab flux from 10 TeV to 100 TeV
+ALP_bounds:
+  IE_model_min: "/Users/christopher/Documents/IEM_gamma_OPTIMISED_Min_PI0_IC_Brems_nside512.fits"
+  IE_model_max: "/Users/christopher/Documents/IEM_gamma_OPTIMISED_MAX_PI0_IC_Brems_nside512.fits"
+  subPS_TibetASg: "/Users/christopher/Documents/ALP_subPeV_TibetHAWC/subthreshold_population_geq1TeV_fluxTH_0.09739141919624462_beta_2.6_Ecutoff_300.0TeV_lmin_25deg_lmax_100deg_b_leq_5deg_neu.txt"
+  subPS_HAWC: "/Users/christopher/Documents/ALP_subPeV_TibetHAWC/subthreshold_population_geq1TeV_fluxTH_0.02_beta_2.6_Ecutoff_300.0TeV_lmin_43deg_lmax_73deg_b_leq_4deg_neu.txt"
+  m_a : [1.0] ## units: neV
+  g_agg: [0.05, 0.1, 0.25, 0.5, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0] #units: 1e-11 GeV^-1
+  ALP_data_EGAL: ["photon_alp_conv_probability_ma_1.0neV_gagg_0.05e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+  "photon_alp_conv_probability_ma_1.0neV_gagg_0.1e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+  "photon_alp_conv_probability_ma_1.0neV_gagg_0.25e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+  "photon_alp_conv_probability_ma_1.0neV_gagg_0.5e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+  "photon_alp_conv_probability_ma_1.0neV_gagg_1.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat", "photon_alp_conv_probability_ma_1.0neV_gagg_2.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+"photon_alp_conv_probability_ma_1.0neV_gagg_3.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+"photon_alp_conv_probability_ma_1.0neV_gagg_4.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+"photon_alp_conv_probability_ma_1.0neV_gagg_5.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+"photon_alp_conv_probability_ma_1.0neV_gagg_6.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat"]
+  ALP_data_GAL: ["gammaALPs_JANSSON12C_gagg_5e-13GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+  "gammaALPs_JANSSON12C_gagg_1e-12GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+  "gammaALPs_JANSSON12C_gagg_2.5e-12GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+  "gammaALPs_JANSSON12C_gagg_5e-12GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+  "gammaALPs_JANSSON12C_gagg_1e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+"gammaALPs_JANSSON12C_gagg_2e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+"gammaALPs_JANSSON12C_gagg_3e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+"gammaALPs_JANSSON12C_gagg_4e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+"gammaALPs_JANSSON12C_gagg_5e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+"gammaALPs_JANSSON12C_gagg_6e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits"]
+  path : "/Users/christopher/Documents/ALP_subPeV_TibetHAWC/SFG_data_Tibet_final/"
+plotting:
+   HAWC:
+     GLON: [43.0, 73.0]
+     GLAT: [-4.0, 4.0]
+   TibetASg:
+     GLON: [25.0, 100.0]
+     GLAT: [-5.0, 5.0]
+   ALP_data:
+     g_agg_plot: 3.0 ### units: 1e-11/GeV
+     m_a : [1.0] ## units: neV
+     g_agg: [0.05, 0.1, 0.25, 0.5, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0] #units: 1e-11 GeV^-1
+     ALP_data_EGAL: ["photon_alp_conv_probability_ma_1.0neV_gagg_0.05e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+  "photon_alp_conv_probability_ma_1.0neV_gagg_0.1e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+  "photon_alp_conv_probability_ma_1.0neV_gagg_0.25e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+  "photon_alp_conv_probability_ma_1.0neV_gagg_0.5e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+  "photon_alp_conv_probability_ma_1.0neV_gagg_1.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat", "photon_alp_conv_probability_ma_1.0neV_gagg_2.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+"photon_alp_conv_probability_ma_1.0neV_gagg_3.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+"photon_alp_conv_probability_ma_1.0neV_gagg_4.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+"photon_alp_conv_probability_ma_1.0neV_gagg_5.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat",
+"photon_alp_conv_probability_ma_1.0neV_gagg_6.0e-11_upto_z_10_1GeV_10PeVtest_file_CHANGES-VLA_SFG_parameters_Ldom_z_CMB_absorption_z_gammaALPs.dat"]
+     ALP_data_GAL: ["gammaALPs_JANSSON12C_gagg_5e-13GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+  "gammaALPs_JANSSON12C_gagg_1e-12GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+  "gammaALPs_JANSSON12C_gagg_2.5e-12GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+  "gammaALPs_JANSSON12C_gagg_5e-12GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+  "gammaALPs_JANSSON12C_gagg_1e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+"gammaALPs_JANSSON12C_gagg_2e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+"gammaALPs_JANSSON12C_gagg_3e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+"gammaALPs_JANSSON12C_gagg_4e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+"gammaALPs_JANSSON12C_gagg_5e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits",
+"gammaALPs_JANSSON12C_gagg_6e-11GeV-1_ma_1.0neV_100GeV_1PeV_60Ebins.fits"]
+     path : "/Users/christopher/Documents/ALP_subPeV_TibetHAWC/SFG_data_Tibet_final/"
+     
